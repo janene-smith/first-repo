@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.grid-item-1 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+.item2 {
+  grid-area: 2 / 1 / span 2 / span 3;
+}
+.item3 {
+  grid-column-start: 4;
+}
+.item4 {
+  grid-column-start: 4;
+}
+.item5 {
+  grid-column-start: 1;
+}
+.item6 {
+  grid-column-start: 2;
+}
+.item7 {
+  grid-column-start: 3;
+}
+.item8 {
+  grid-column-start: 4;
+}
+.item9 {
+  grid-area: 5 / 1 / span 1 / span 4;
+}
+
+/*
+The syntax is
+grid-row-start / grid-column-start / grid-row-end / grid-column-end.
+}
+*/
+.item10 {
+  grid-areas: 1 / 1 / span 2 / span 2;
+}
+.item11 {
+  grid-column: 3 / 12;
+  grid-row: 1 / 2;
+}
+
+.item12 {
+  grid-area: 2 / 1 / span 2 / span 6;
+}
+
+.item13 {
+  grid-area: 2 / 7 / span 2 / span 10;
+}
+
+.item14 {
+  grid-area: 3 / 2 / span 3 / span 5;
+}
+
+.item15 {
+  grid-area: 3 / 7 / span 3 / span 9;
+}
+
+.item16 {
+  grid-area: 3 / 9 / span 3 / span 11;
+}
+
+.item17 {
+  grid-area: 4 / 1 / span 4 / span 12;
+}
+.item18 {
+  grid-area: 5 / 1 / 5 / 4;
+}
+.item19 {
+  grid-area: 5 / 5 / 5 / 12;
+}
+#myDIV {
+  display: grid;
+  grid-template-areas:'myArea myArea .'
+   'myArea myArea .';
+}
+.item1 {
+  grid-area: myArea;
+}
+.grid-containera {
+  display: grid;
+  grid-template areas:
+    'myArea myArea . . . . . . . . . .'
+    'myArea myArea . . . . . . . . . .';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  pading: 20px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>The grid-area Property</h1>
+
+<p>You can use the <em>grid-area</em> property to specify where to place an item.</p>
+<p>The syntax is grid-row-start / grid-column-start / grid-row-end / grid-column-end.</p>
+<p>Item1 will start on row 2 and column 1, and span 2 rows and 3 columns:</p>
+
+<div class="grid-container">
+  <div class="item1">1</div>
+  <div class="item2">2</div>
+  <div class="item3">3</div>
+  <div class="item4">4</div>
+  <div class="item5">5</div>
+  <div class="item6">6</div>
+  <div class="item7">7</div>
+  <div class="item8">8</div>
+  <div class="item9">9</div>
+
+</div>
+*/
+<div class="grid-container">
+  <div class="item10">10</div>
+  <div class="item11">11</div>
+  <div class="item12">12</div>
+  <div class="item13">13</div>
+  <div class="item14">14</div>
+  <div class="item15">15</div>
+  <div class="item16">16</div>
+  <div class="item17">17</div>
+  <div class="item18">18</div>
+  <div class="item19">19</div>
+</div>
+</body>
+</html>

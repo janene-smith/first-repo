@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>selector practice</title>
+    <style media="screen">
+      a.accent:visited {
+        color: magenta;
+      }
+
+      p:nth-of-type(4) {
+        background-color: green;
+      }
+      p::first-letter {
+        color: magenta;
+      }
+      ul li:nth-child(even) {
+        background-color: orange;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>First Headline</h1>
+    <p>Lorem 1</p>
+    <p>Lorem 2</p>
+    <p>Lorem 3</p>
+    <p>Lorem 4</p>
+
+    <h2>Second Headline</h2>
+    <ul>
+      <li>First item</li>
+      <li>Second item</li>
+      <li>Third item</li>
+      <li>Fourth item</li>
+    </ul>
+
+    <ol>
+      <li>First item</li>
+      <li>Second item</li>
+      <li>Third item</li>
+      <li>Fourth item</li>
+    </ol>
+
+    <footer>
+      <a href="https://lipsum.com/" class="accent">Generate your own Lorem Ipsum</a>
+    </footer>
+  </body>
+</html>
